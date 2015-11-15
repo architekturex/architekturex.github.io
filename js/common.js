@@ -38,6 +38,7 @@ $(document).ready(function(){
 	$('.burger-menu').on('click', function(){
 		$('.navigation-mobile').toggleClass('mobile-toggle');
 		$('.nav-items').toggleClass('mobile-nav-iems');
+		$('body').toggleClass('overflow');
 	});
 
 
@@ -60,7 +61,7 @@ $(document).ready(function(){
 	(function () {
 		if ($(window).width() <= 1100){	
 			$('.header-container, .services-background').remove(); 
-			$('.navigation').addClass('nav-hidden');
+			// $('.navigation').addClass('nav-hidden');
 
 			$('.nav').toggleClass('navigation');
 			$('.nav').toggleClass('navigation-mobile');

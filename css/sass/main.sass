@@ -1,5 +1,9 @@
 $playfair: 'Playfair Display', serif
 $montserrat: 'Montserrat', sans-serif
+$raleway: 'Raleway', sans-serif
+
+.overflow
+	overflow: hidden
 
 // -- the NAV --
 .navigation
@@ -46,8 +50,57 @@ nav
 		&:hover
 			color: #fff
 
-// .nav-hidden
-// 	visibility: hidden
+
+// -- header titles 
+.header-titles
+	display: flex
+	flex-direction: column
+	align-items: center
+
+	position: relative
+	z-index: 4
+	
+	width: auto
+	height: auto
+	margin: 160px auto 0
+
+	color: #fff
+
+	h1
+		font-family: $playfair
+		font-size: 45px
+
+	h2
+		padding: 18px 0 25px
+
+		font-family: $raleway
+		font-size: 24px		
+		font-weight: 300
+
+.header-button
+	display: flex
+	justify-content: center
+	align-items: center
+
+	width: 150px
+	height: 50px
+
+	font-family: $montserrat
+	font-size: 14px
+	text-transform: uppercase
+
+	border: 2.5px solid #fff
+	color: #fff
+	cursor: pointer
+
+	transition: .5s ease
+
+	&:hover
+		background-color: #fff
+		color: #000
+
+
+
 
 // ----- MOBILE NAV -------	
 
@@ -213,12 +266,12 @@ nav
 
 //-- header on small devices --
 .head-container
-	display: none
+	// display: none
 
 	position: absolute
 	top: 0
 	left: 0
-	z-index: 0
+	z-index: 4
 
 	width: 100%
 	height: 100vh
@@ -246,7 +299,7 @@ nav
 	width: auto
 	max-width: 1110px
 	// height: 530px
-	margin: 370px auto 0
+	margin: 400px auto 0
 
 	background-color: #fff
 	box-shadow: 0px -8px 13px 0px rgba(0,0,0,0.75)
