@@ -1,0 +1,422 @@
+$playfair: 'Playfair Display', serif
+$montserrat: 'Montserrat', sans-serif
+
+// -- the NAV --
+.navigation
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+	position: relative
+	z-index: 10
+
+	max-width: 1110px
+	height: 30px
+	margin: 32px auto 0
+
+
+
+.nav-logo
+	font-family: $playfair
+	font-size: 25px
+	font-weight: 700
+	
+	color: #fff
+
+	span
+		color: #ffb932
+
+nav
+
+	li
+		position: relative
+
+		display: inline-block
+		padding-left: 30px
+		
+		font-family: $montserrat
+		font-size: 14px
+
+		color: #ffa800
+		text-transform: uppercase
+		cursor: pointer
+
+		transition: .4s ease
+
+		&:hover
+			color: #fff
+
+// .nav-hidden
+// 	visibility: hidden
+
+// ----- MOBILE NAV -------	
+
+// -- burger menu --
+.burger-menu
+	position: absolute
+	top: 25px
+	right: 25px
+	z-index: 10
+
+	width: 40px
+	height: 40px
+
+	visibility: hidden
+	cursor: pointer
+
+
+.menu-global
+	position: absolute
+	left: 0
+	border-top: 5.5px solid white
+	width: 100%
+	transition: 0.55s
+
+.menu-top 
+	top: 0
+
+.menu-middle 
+	top: 16px
+
+.menu-bottom 
+	top: 32px
+
+.menu-top-click 
+	backface-visibility: hidden
+	top: 15px
+	transform: rotate(50deg)
+	transition: 0.6s 0.2s
+
+.menu-middle-click 
+	opacity: 0
+
+.menu-bottom-click 
+	backface-visibility: hidden
+	top: 15px
+	transform: rotate(-410deg)
+	transition: 0.6s 0.2s
+
+
+//-- mobile nav --
+.navigation-mobile
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
+	position: relative
+	z-index: 5
+
+	width: 100%
+	height: 100vh
+
+	background-color: #000
+	visibility: hidden
+	opacity: 0
+
+	transition: .5s ease
+
+	.nav-logo
+		padding-bottom: 50px
+
+.mobile-toggle	
+	visibility: visible
+	opacity: 1
+
+
+.mobile-nav-iems
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+
+	li
+		padding: 15px 0
+
+
+
+
+// -- laptop screen --
+.full-container
+	position: absolute
+	top: -38%
+	left: 0
+	z-index: 1
+
+	width: 100%
+	height: auto
+
+	border: 1px solid black
+
+.full-container img
+	position: relative
+	top: 100px
+
+	display: block
+
+	width: 100%
+
+.owl-buttons .owl-prev
+	position: absolute
+	top: 580px
+	left: 30px
+
+	width: 17px
+	height: 28px
+
+	background-image: url(../img/left.png)
+
+	transition: .3s ease
+
+	&:hover
+		transform: translate(-3px, 0)
+
+.owl-buttons .owl-next
+	position: absolute
+	top: 580px
+	right: 30px
+
+	width: 17px
+	height: 28px
+
+	background-image: url(../img/right.png)
+
+	transition: .3s ease
+
+	&:hover
+		transform: translate(3px, 0)
+
+.owl-pagination
+	position: absolute
+	bottom: -45px
+	left: 49%
+	z-index: 15
+
+	transform: translate(-25%, 0)
+
+.owl-page
+	display: inline-block
+	width: 10px
+	height: 10px	
+	margin: 0 5px
+	
+	border-radius: 50%
+	background-color: #fff
+
+.owl-page:hover
+	background-color: #ffb932
+
+.owl-page.active
+	background-color: #ffb932
+
+
+
+//-- header on small devices --
+.head-container
+	display: none
+
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 0
+
+	width: 100%
+	height: 100vh
+	border: 1px solid black
+
+	background: url(../img/sp-sp.png) no-repeat center
+	background-size: cover
+
+
+
+
+
+
+
+
+
+
+
+//-------------- SERVICES ---------------
+
+.services
+	position: relative
+	z-index: 10
+
+	width: auto
+	max-width: 1110px
+	// height: 530px
+	margin: 370px auto 0
+
+	background-color: #fff
+	box-shadow: 0px -8px 13px 0px rgba(0,0,0,0.75)
+
+	&::before
+		content: ''
+		position: absolute
+		top: 284px
+
+		left: -8px
+		width: 10px
+		height: 250px
+
+		background-color: #fff
+
+	&::after
+		content: ''
+		position: absolute
+		top: 284px
+
+		right: -8px
+		width: 10px
+		height: 250px
+
+		background-color: #fff
+
+//-- header --
+.services-header
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
+	font-family: $playfair	
+	font-size: 32px
+
+	color: #000	
+
+	h3
+		padding: 58px 0 19px
+
+	.services-intro
+		padding-top: 35px
+
+		font-family: 'Raleway', sans-serif
+		font-size: 14px
+		font-weight: 500
+
+		color: #4a4a4a	
+
+.services-logo
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+	h4
+		padding: 0 15px
+
+	.ln
+		width: 45px
+		height: 3px
+
+		background-color: #7f7f7f	
+
+
+
+
+//-- content --
+.services-content
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+	width: 100%
+	margin: 44px auto 0
+	padding: 0 5px
+
+.serv-block
+	display: flex
+	flex-direction: column
+	align-items: center
+
+	width: 255px
+	height: 255px
+	text-align: center
+
+	font-family: 'Raleway', sans-serif
+
+	// border: 1px solid black
+	cursor: pointer
+
+	transition: .7s ease
+
+	&:hover
+		background-color: #f0f0f0
+	&:hover .sv-bl-line
+		width: 30px
+		background-color: #ffa800
+	&:hover h4
+		color: #ffa800
+
+	h4
+		padding: 26px 0 12px
+
+		font-size: 18px
+		font-weight: 700
+
+		color: #1f1f1f
+
+		transition: .7s ease
+
+	p
+		padding-bottom: 20px
+
+		font-size: 13px
+		font-weight: 500
+		line-height: 22px
+
+		color: #474747
+
+.sv-bl-line
+	width: 65px
+	height: 4px
+
+	background-color: #1f1f1f
+
+	transition: .7s ease
+
+
+.serv-rect
+	display: flex
+	justify-content: center
+	align-items: center	
+
+	width: 95px
+	height: 95px
+
+	background-color: #f0f0f0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.services-background
+	position: absolute
+	z-index: 5
+	top: 600px
+	left: 0
+
+	width: 100%
+	height: 500px
+
+	background-color: #fff
+
+
+
+
