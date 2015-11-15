@@ -47,3 +47,10 @@
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; } }
+@media screen and (max-width: 500px) {
+  .header-titles {
+    width: 100%;
+    text-align: center; }
+
+  h1 {
+    line-height: 50px; } }
