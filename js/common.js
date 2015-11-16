@@ -69,5 +69,15 @@ $(document).ready(function(){
 	}());
 
 
+	// -- parallax 1 -- 
+	$(window).scroll(function(e){
+	  parallax();
+	});
+
+	function parallax(){
+	  var scrolled = $(window).scrollTop();
+	  $('.parallax-1').css('top',-(scrolled*0.2)+'px');
+	}
+
 
 });
