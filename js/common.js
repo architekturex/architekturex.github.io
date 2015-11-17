@@ -80,4 +80,34 @@ $(document).ready(function(){
 	}
 
 
+
+	// -- tabs --
+	jQuery(document).ready(function($){
+		var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+
+		//open team-member bio
+		$('.inject').on('click', function(event){
+			event.preventDefault();
+
+			$(this).addClass('tab-color').siblings().removeClass('tab-color');
+			var selected_member = $(this).data('type');
+			$('.tab-el.'+selected_member+'').addClass('appear').siblings().removeClass('appear');
+			$('.tab-el.'+selected_member+'').find('.project').addClass('appear');
+			$('.tab-el.'+selected_member+'').siblings().find('.appear').removeClass('appear')
+
+			// if($('.tab-el.'+selected_member+'').hasClass('appear'))
+			// 	$('.tab-el.'+selected_member+'').find('.project').addClass('appear').siblings().removeClass('appear');
+			// 	// $('.tab-el.').find('.project').removeClass('appear');
+
+			
+		
+			
+
+
+	});
+
+
+});	
+
+
 });
